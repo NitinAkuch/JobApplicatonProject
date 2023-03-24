@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lightblue;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.title_web{
+    font-size: 20px;
+}
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color:white;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.9);
+    border-radius: 10px;
+
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+    gap: 25px;
+    margin-top: 30px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+input, select, textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus{
+    outline-color: red;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s ease-in;
+
+}
+
+button:hover{
+    background-color: green;
+    border: 2px solid green;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+
+@media (max-width: 462px){
+    .textarea_control{
+        grid-column: 1 / span 1;
+    }
+}
